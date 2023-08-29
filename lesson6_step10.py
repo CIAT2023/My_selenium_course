@@ -2,10 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-try:
-    link = "http://suninjuly.github.io/registration1.html"
-    #link = "http://suninjuly.github.io/registration2.html"
+link = "http://suninjuly.github.io/registration1.html"
+#link = "http://suninjuly.github.io/registration2.html"
 
+try:
     browser = webdriver.Chrome()
     browser.get(link)
     # body > div.container > form > div.first_block > div.form - group.first_class
