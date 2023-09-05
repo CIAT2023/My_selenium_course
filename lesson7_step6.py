@@ -7,7 +7,10 @@ link = "http://suninjuly.github.io/math.html"
 
 try:
     browser = webdriver.Chrome()
+    # Установка размера браузера
+    browser.set_window_size(75, 800)
     browser.get(link)
+
 #проверяем значение атрибута checked у people_radio
     people_radio = browser.find_element(By.ID, "peopleRule")
     people_checked = people_radio.get_attribute("checked")
